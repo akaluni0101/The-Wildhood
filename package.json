@@ -1,0 +1,26 @@
+{
+  "name": "the-wildhood",
+  "version": "1.0.0",
+  "description": "The Wildhood — Luxury Wildlife-Themed Café & Restaurant Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "restaurant",
+    "cafe",
+    "wildlife",
+    "nature",
+    "mohali"
+  ],
+  "author": "The Wildhood",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "muzqen86",
+    "bookingCode": "WH-8385",
+    "name": "Test Guest",
+    "phone": "9876543210",
+    "email": "test@example.com",
+    "date": "2026-10-10",
+    "time": "07:30 PM",
+    "guests": "2",
+    "seating": "Indoor Botanical Glasshouse",
+    "requests": "Anniversary",
+    "createdAt": "2026-10-08T16:09:09.654Z"
+  }
+]

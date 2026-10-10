@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wildhood — Where The Wild Meets The Table | Luxury Nature Café & Restaurant, Mohali</title>
+  <meta name="description" content="Welcome to The Wildhood in Sector 100, Mohali. An extraordinary nature and wildlife-themed dining sanctuary featuring live animal encounters, wood-fired artisanal cuisine, and starlit nocturnal forest dining.">
+  <meta name="keywords" content="The Wildhood, The Wildhood Mohali, nature cafe Mohali, wildlife cafe, Sector 100 Sukhgarh restaurant, luxury cafe Punjab, animals cafe, wood fired pizza Mohali">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="The Wildhood — Where The Wild Meets The Table">
+  <meta property="og:description" content="Step into a luxurious wildlife dining estate in Sector 100, Mohali. Encounter resident horses, ducks, and bunnies while savoring artisanal wood-fired gastronomy.">
+  <meta property="og:image" content="images/hero_wildhood.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data for Local Restaurant SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Wildhood",
+    "image": "images/hero_wildhood.jpg",
+    "description": "Luxury nature and wildlife-themed dining estate featuring resident animals, botanical glasshouse, and artisanal gastronomy.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sector 100, opposite Gugga Maddi, Sukhgarh",
+      "addressLocality": "Sahibzada Ajit Singh Nagar, Mohali",
+      "addressRegion": "Punjab",
+      "postalCode": "140306",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.6698,
+      "longitude": 76.7112
+    },
+    "url": "https://thewildhood.in",
+    "telephone": "+919876543210",
+    "servesCuisine": ["Italian", "Continental", "North Indian", "Wood-fired Pizza", "Artisanal Coffee"],
+    "priceRange": "₹₹ - ₹₹₹",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "01:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Cinematic Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-emblem">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+        <circle cx="50" cy="50" r="44" stroke="#cba760" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6"/>
+        <path d="M50 16 L56 36 L78 38 L62 52 L67 74 L50 62 L33 74 L38 52 L22 38 L44 36 Z" fill="none" stroke="#cba760" stroke-width="2"/>
+        <circle cx="50" cy="50" r="8" fill="#cba760"/>
+      </svg>
+    </div>
+    <div class="preloader-title">The Wildhood</div>
+    <div class="preloader-status">Entering the Wild...</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- Site Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor">
+          <circle cx="16" cy="16" r="14" stroke="#cba760" stroke-width="1.5"/>
+          <path d="M16 6 C12 12 8 16 8 22 C8 26.4 11.6 28 16 28 C20.4 28 24 26.4 24 22 C24 16 20 12 16 6 Z" fill="none" stroke="#cba760" stroke-width="1.5"/>
+          <line x1="16" y1="12" x2="16" y2="24" stroke="#cba760" stroke-width="1.5"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-brand">THE WILDHOOD</span>
+          <span class="logo-sub">Mohali • Sector 100</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="experience.html" class="nav-link">The Experience</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="wildlife.html" class="nav-link">Wildlife</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservation</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items: Sound & Reserve Button -->
+      <div class="header-actions">
+        <button id="audioToggleBtn" class="audio-toggle-btn" title="Toggle Nature Atmosphere">
+          <div class="audio-visualizer">
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+          </div>
+          <span class="audio-label">Sound</span>
+        </button>
+
+        <a href="reservation.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.72rem;">Reserve A Table</a>
+
+        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Overlay -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="mobile-nav-menu">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="experience.html" class="mobile-nav-link">The Experience</a></li>
+      <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="wildlife.html" class="mobile-nav-link">Wildlife</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="reservation.html" class="mobile-nav-link">Reservation</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="reservation.html" class="btn btn-primary">Book Your Table</a>
+      <p style="margin-top: 16px; font-size: 0.8rem; color: var(--color-gold);">Sector 100, Sukhgarh, Mohali</p>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-media-wrapper">
+        <img src="images/hero_wildhood.jpg" alt="The Wildhood Forest Café & Restaurant at Twilight" class="hero-bg-img">
+        <div class="hero-overlay-dark"></div>
+        <div class="hero-overlay-gradient"></div>
+        <div class="hero-particles" aria-hidden="true">
+          <span class="hero-particle" style="top: 20%; left: 15%; width: 6px; height: 6px; animation-duration: 9s;"></span>
+          <span class="hero-particle" style="top: 60%; left: 40%; width: 8px; height: 8px; animation-duration: 13s; animation-delay: 2s;"></span>
+          <span class="hero-particle" style="top: 40%; left: 75%; width: 5px; height: 5px; animation-duration: 11s; animation-delay: 1s;"></span>
+          <span class="hero-particle" style="top: 75%; left: 85%; width: 7px; height: 7px; animation-duration: 15s; animation-delay: 3s;"></span>
+        </div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Mohali's Wildlife Dining Sanctuary</span>
+        </div>
+        <h1 class="hero-title">THE WILDHOOD</h1>
+        <p class="hero-tagline">"Where The Wild Meets The Table"</p>
+        <p class="hero-subtext">
+          An extraordinary dining sanctuary inspired by the untamed. Encounter resident horses, waterfowl, and lush botanical architecture while savoring artisanal wood-fired craft.
+        </p>
+        <div class="hero-actions">
+          <a href="#experienceIntro" class="btn btn-primary">Enter The Wild &rarr;</a>
+          <a href="menu.html" class="btn btn-outline">Explore Menu</a>
+        </div>
+      </div>
+
+      <a href="#experienceIntro" class="hero-scroll-indicator" aria-label="Scroll to discover">
+        <span>Scroll to Explore</span>
+        <div class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- SIGNATURE INTERACTION: "EXPLORE THE WILD" JOURNEY BAR -->
+    <nav class="wild-journey-strip" aria-label="Experience Progression">
+      <div class="container">
+        <ul class="journey-steps">
+          <li class="journey-step active" data-step="0">
+            <span class="journey-step-num">01</span>
+            <span class="journey-step-name">The Forest</span>
+            <span class="journey-step-divider"></span>
+          </li>
+          <li class="journey-step" data-step="1">
+            <span class="journey-step-num">02</span>
+            <span class="journey-step-name">The Space</span>
+            <span class="journey-step-divider"></span>
+          </li>
+          <li class="journey-step" data-step="2">
+            <span class="journey-step-num">03</span>
+            <span class="journey-step-name">Resident Wildlife</span>
+            <span class="journey-step-divider"></span>
+          </li>
+          <li class="journey-step" data-step="3">
+            <span class="journey-step-num">04</span>
+            <span class="journey-step-name">The Table</span>
+            <span class="journey-step-divider"></span>
+          </li>
+          <li class="journey-step" data-step="4">
+            <span class="journey-step-num">05</span>
+            <span class="journey-step-name">Nocturnal Magic</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: THE EXPERIENCE INTRO -->
+    <section id="experienceIntro" class="section-experience">
+      <div class="container">
+        <div class="experience-grid">
+          <div class="experience-content">
+            <span class="section-label">A Sanctuary in Sukhgarh</span>
+            <h2 class="section-title">NOT JUST A CAFÉ.<br><span class="text-gold">A WILD EXPERIENCE.</span></h2>
+            <p class="section-desc">
+              Tucked away in Sector 100, Mohali, The Wildhood redefines hospitality. Here, the boundaries between a lush nature sanctuary and upscale gastronomy dissolve. Breathe in the crisp evening air, listen to the gentle rustle of leaves, and watch gentle horses graze as your wood-fired pizza emerges golden from the stone oven.
+            </p>
+
+            <div class="experience-features">
+              <div class="feature-item">
+                <h3 class="feature-title">Botanical Glasshouse</h3>
+                <p class="feature-desc">Floor-to-ceiling glass pavilions enveloped in living greenery, dark slate, and warm amber pendant lights.</p>
+              </div>
+              <div class="feature-item">
+                <h3 class="feature-title">Golden Hour Paddock</h3>
+                <p class="feature-desc">Open-air garden decks facing the animal enclosures. Arrive before sunset for unforgettable moments.</p>
+              </div>
+              <div class="feature-item">
+                <h3 class="feature-title">Clay & Wood Fire</h3>
+                <p class="feature-desc">Authentic sourdough pizzas, slow-braised ragus, and aromatic Continental delicacies crafted to perfection.</p>
+              </div>
+              <div class="feature-item">
+                <h3 class="feature-title">Starlit Dining</h3>
+                <p class="feature-desc">As night falls, fairy lights and warm lanterns transform the grounds into an enchanted forest until 1:00 AM.</p>
+              </div>
+            </div>
+
+            <a href="experience.html" class="btn btn-outline">Discover The Full Story &rarr;</a>
+          </div>
+
+          <div class="experience-imagery">
+            <img src="images/real_wildhood_f7Uz9hqhrlg.jpg" alt="The Wildhood Authentic Glasshouse Interior with Branch Chandelier and Wildlife Decor" class="experience-img-main">
+            <div class="experience-card-floating">
+              <div class="floating-card-stat">1:00 AM</div>
+              <div class="floating-card-label">Late-Night Starlit Dining Experience</div>
+              <span class="photo-replace-hint">Real Wildhood Interior</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MEET THE WILD (INTERACTIVE RESIDENT ANIMALS) -->
+    <section id="wildlifeSection" class="section-wildlife">
+      <div class="wildlife-ambient-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Living Encounters & Art</span>
+          <h2 class="section-title">MEET THE WILD</h2>
+          <p class="section-desc mx-auto">
+            Unlike ordinary dining spaces, The Wildhood is a living sanctuary. Spend moments interacting with our gentle resident companions before dusk, amidst life-sized sculptural installations.
+          </p>
+        </div>
+
+        <div class="wildlife-cards-grid" style="margin-top: 48px;">
+          <!-- Card 1: Horses & Ponies (Real photo) -->
+          <article class="wildlife-card" onclick="window.location.href='wildlife.html'">
+            <img src="images/real_wildhood_16GmpOPBsmo.jpg" alt="Real Resident Horses and Pony Grazing Beside Tables at The Wildhood Mohali" class="wildlife-card-img">
+            <div class="wildlife-card-overlay">
+              <span class="wildlife-tag">Real Encounter &bull; Lawn Dining</span>
+              <h3 class="wildlife-name">Horses & Ponies</h3>
+              <p class="wildlife-role">Our gentle resident horses and miniature ponies grazing peacefully right beside guest lawn tables.</p>
+              <span class="wildlife-explore-hint">Learn More &rarr;</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Ducks & Waterfowl -->
+          <article class="wildlife-card" onclick="window.location.href='wildlife.html'">
+            <img src="images/wildlife_ducks.jpg" alt="Graceful Ducks by the Stone Water Pond" class="wildlife-card-img">
+            <div class="wildlife-card-overlay">
+              <span class="wildlife-tag">Pond Habitat</span>
+              <h3 class="wildlife-name">Waterfowl & Ducks</h3>
+              <p class="wildlife-role">Pristine white ducks gliding through the tranquil stone lily pond, bringing natural serenity.</p>
+              <span class="wildlife-explore-hint">Learn More &rarr;</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Woodland Rabbits -->
+          <article class="wildlife-card" onclick="window.location.href='wildlife.html'">
+            <img src="images/wildlife_rabbits.jpg" alt="Fluffy Rabbits in Garden Sanctuary" class="wildlife-card-img">
+            <div class="wildlife-card-overlay">
+              <span class="wildlife-tag">Sanctuary Nook</span>
+              <h3 class="wildlife-name">Woodland Rabbits</h3>
+              <p class="wildlife-role">Playful and soft bunnies residing in a sheltered green nook—a favorite for children and families.</p>
+              <span class="wildlife-explore-hint">Learn More &rarr;</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Wildlife Art & Sculptures (Real photo) -->
+          <article class="wildlife-card" onclick="window.location.href='wildlife.html'">
+            <img src="images/real_wildhood_b7JB-6A7jw4.jpg" alt="Guest Interacting with Royal Horse at The Wildhood Mohali" class="wildlife-card-img">
+            <div class="wildlife-card-overlay">
+              <span class="wildlife-tag">Real Wildhood Companion</span>
+              <h3 class="wildlife-name">The Royal Horse</h3>
+              <p class="wildlife-role">Admire and greet our friendly royal horses during golden hour visits before sunset.</p>
+              <span class="wildlife-explore-hint">Explore Art &rarr;</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 48px;">
+          <a href="wildlife.html" class="btn btn-outline">Explore Our Sanctuary & Animal Charter &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE WILDHOOD TABLE (CULINARY SHOWCASE) -->
+    <section id="foodSection" class="section-food">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Gastronomic Artistry</span>
+          <h2 class="section-title">THE WILDHOOD TABLE</h2>
+          <p class="section-desc mx-auto">
+            Every dish is an exploration of flavor. Hand-stretched sourdough pizzas kissed by flames, artisanal pastas crafted daily, and botanical elixirs infused with wild botanicals.
+          </p>
+        </div>
+
+        <div class="food-categories-grid">
+          <!-- Pizza -->
+          <article class="food-cat-card">
+            <div class="food-cat-img-box">
+              <img src="images/food_pizza.jpg" alt="Wood-fired Sourdough Neapolitan Pizza" class="food-cat-img">
+              <span class="food-cat-badge">Wood-Fired Oven</span>
+            </div>
+            <div class="food-cat-body">
+              <h3 class="food-cat-title">Wood-Fired Pizzas</h3>
+              <p class="food-cat-desc">48-hour slow fermented sourdough crust, San Marzano tomatoes, fresh buffalo mozzarella, and wild forest herbs.</p>
+              <div class="food-cat-footer">
+                <a href="menu.html" class="food-cat-link">Explore Pizzas &rarr;</a>
+                <span class="food-cat-price-hint">From ₹560</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pasta -->
+          <article class="food-cat-card">
+            <div class="food-cat-img-box">
+              <img src="images/food_pasta.jpg" alt="Handcrafted Truffle Pasta" class="food-cat-img">
+              <span class="food-cat-badge">Handcrafted</span>
+            </div>
+            <div class="food-cat-body">
+              <h3 class="food-cat-title">Artisanal Pastas</h3>
+              <p class="food-cat-desc">Handmade bronze-cut pasta ribbons tossed in cultured butter, shaved truffles, parmesan, and slow-simmered rich ragùs.</p>
+              <div class="food-cat-footer">
+                <a href="menu.html" class="food-cat-link">Explore Pastas &rarr;</a>
+                <span class="food-cat-price-hint">From ₹490</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Beverages -->
+          <article class="food-cat-card">
+            <div class="food-cat-img-box">
+              <img src="images/food_beverages.jpg" alt="Signature Botanical Smoked Mocktail" class="food-cat-img">
+              <span class="food-cat-badge">Signature Mixology</span>
+            </div>
+            <div class="food-cat-body">
+              <h3 class="food-cat-title">Crafted Beverages & Elixirs</h3>
+              <p class="food-cat-desc">Smoked rosemary mocktails, single-origin pour-overs, and mountain coolers crafted with pure botanical extracts.</p>
+              <div class="food-cat-footer">
+                <a href="menu.html" class="food-cat-link">Explore Drinks &rarr;</a>
+                <span class="food-cat-price-hint">From ₹260</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 50px;">
+          <a href="menu.html" class="btn btn-primary">View Full A La Carte Menu &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: NOCTURNAL EXPERIENCE (NIGHT AMBIANCE) -->
+    <section id="nightSection" class="section-night">
+      <div class="container">
+        <div class="night-banner">
+          <div class="night-banner-content">
+            <span class="section-label">Twilight to Midnight</span>
+            <h2 class="section-title">WHEN THE FOREST<br><span class="text-gold">COMES ALIVE</span></h2>
+            <p class="section-desc" style="margin-bottom: 24px;">
+              As dusk settles over Sukhgarh, The Wildhood transforms. Hundreds of warm amber string lights flicker awake, illuminating ancient boughs. Fire pits crackle softly under starry skies while ambient acoustic tones fill the night air.
+            </p>
+            <p style="color: var(--color-gold-light); font-size: 0.95rem; margin-bottom: 32px; font-style: italic;">
+              Open daily until 1:00 AM — the ultimate destination for romantic dates, midnight celebrations, and serene twilight dinners.
+            </p>
+            <a href="reservation.html" class="btn btn-primary">Reserve Night Experience &rarr;</a>
+          </div>
+          <img src="images/night_ambiance.jpg" alt="The Wildhood Cafe by Night under Fairy Lights" class="night-banner-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INSTAGRAM SECTION (@the_wildhood_) -->
+    <section class="section-instagram">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Real Moments &bull; Social Dispatch</span>
+          <h2 class="section-title">FROM THE WILDHOOD</h2>
+          <p class="section-desc mx-auto">
+            Authentic moments captured by guests amidst our resident horses, botanical glasshouse, and evening dinners. Tag your journey with <strong>#TheWildhoodMohali</strong>.
+          </p>
+        </div>
+
+        <div class="instagram-grid">
+          <div class="instagram-item" onclick="window.open('https://www.instagram.com/the_wildhood_/', '_blank')">
+            <img src="images/real_wildhood_V3kBPm7QSvI.jpg" alt="Iconic Entrance Gate of The Wildhood Sector 100 Mohali" class="instagram-img">
+            <div class="instagram-overlay">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="instagram-caption-snip">#TheWildhoodEntrance</span>
+            </div>
+          </div>
+
+          <div class="instagram-item" onclick="window.open('https://www.instagram.com/the_wildhood_/', '_blank')">
+            <img src="images/real_wildhood_16GmpOPBsmo.jpg" alt="Horses Grazing by Dining Tables at The Wildhood" class="instagram-img">
+            <div class="instagram-overlay">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="instagram-caption-snip">#LawnDiningWithHorses</span>
+            </div>
+          </div>
+
+          <div class="instagram-item" onclick="window.open('https://www.instagram.com/the_wildhood_/', '_blank')">
+            <img src="images/real_wildhood_B9fzbBSaPNs.jpg" alt="Pizza and Drinks on Outdoor Night Dining Deck at The Wildhood" class="instagram-img">
+            <div class="instagram-overlay">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="instagram-caption-snip">#WildhoodPizzaNight</span>
+            </div>
+          </div>
+
+          <div class="instagram-item" onclick="window.open('https://www.instagram.com/the_wildhood_/', '_blank')">
+            <img src="images/real_wildhood_f7Uz9hqhrlg.jpg" alt="Vaulted Glasshouse Interior and Brick Wall Sculptures" class="instagram-img">
+            <div class="instagram-overlay">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="instagram-caption-snip">#WildhoodAmbience</span>
+            </div>
+          </div>
+
+          <div class="instagram-item" onclick="window.open('https://www.instagram.com/the_wildhood_/', '_blank')">
+            <img src="images/real_wildhood_b7JB-6A7jw4.jpg" alt="Visitor Greeting the Real Royal Horse at The Wildhood" class="instagram-img">
+            <div class="instagram-overlay">
+              <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="instagram-caption-snip">#HorseEncounters</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 40px;">
+          <a href="https://www.instagram.com/the_wildhood_/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Follow @the_wildhood_ On Instagram &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RESERVATION CALL TO ACTION -->
+    <section class="section-cta-banner">
+      <div class="container cta-banner-card">
+        <span class="section-label">Your Experience Begins Here</span>
+        <h2 class="section-title">YOUR TABLE IN THE WILD AWAITS</h2>
+        <p class="section-desc mx-auto" style="margin-bottom: 36px;">
+          Whether planning an intimate candlelit celebration, an afternoon family outing with the animals, or an evening gathering under the stars, reserve your space ahead of time.
+        </p>
+        <a href="reservation.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 0.85rem;">Reserve My Table &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING QUICK ACTION BAR (Mobile & Tablet) -->
+  <aside class="floating-action-bar" aria-label="Quick Actions">
+    <a href="tel:+919876543210" class="floating-action-btn" title="Call The Wildhood">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://share.google/d18UVv7zeG6oCj9fx" target="_blank" rel="noopener noreferrer" class="floating-action-btn" title="Google Maps Directions">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+      <span>Directions</span>
+    </a>
+    <a href="reservation.html" class="floating-action-btn reserve-highlight" title="Book Table">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      <span>Reserve</span>
+    </a>
+  </aside>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand -->
+        <div>
+          <h3 class="footer-brand-title">THE WILDHOOD</h3>
+          <p class="footer-brand-desc">
+            A nature and wildlife-themed dining destination where luxury architecture meets the tranquility of the wild. Sector 100, Mohali.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/the_wildhood_/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://share.google/d18UVv7zeG6oCj9fx" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Google Maps Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="experience.html" class="footer-link">The Experience</a></li>
+            <li><a href="menu.html" class="footer-link">The Wildhood Menu</a></li>
+            <li><a href="wildlife.html" class="footer-link">Resident Wildlife</a></li>
+            <li><a href="gallery.html" class="footer-link">Visual Gallery</a></li>
+            <li><a href="reservation.html" class="footer-link">Reserve Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Experiences -->
+        <div>
+          <h4 class="footer-col-title">Sanctuary</h4>
+          <ul class="footer-links-list">
+            <li><a href="wildlife.html" class="footer-link">Horse & Pony Paddock</a></li>
+            <li><a href="wildlife.html" class="footer-link">Lily Pond & Waterfowl</a></li>
+            <li><a href="wildlife.html" class="footer-link">Woodland Bunny Nook</a></li>
+            <li><a href="wildlife.html" class="footer-link">Animal Care Charter</a></li>
+            <li><a href="experience.html" class="footer-link">Twilight & Starlit Nights</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Timings & Location -->
+        <div>
+          <h4 class="footer-col-title">Hours & Location</h4>
+          <div class="footer-hours-row">
+            <span class="footer-hours-label">All Days</span>
+            <span>12:00 PM – 1:00 AM</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="footer-hours-label">Animal Visits</span>
+            <span>Best Before Sunset</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin-top: 14px; line-height: 1.6;">
+            Sector 100, opposite Gugga Maddi, Sukhgarh, Sahibzada Ajit Singh Nagar, Mohali, Punjab
+          </p>
+          <a href="contact.html" style="display: inline-block; margin-top: 10px; color: var(--color-gold); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">
+            Get Driving Directions &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Wildhood. All Rights Reserved.</div>
+        <div style="color: var(--color-gold-muted);">Sector 100, Sukhgarh, Mohali &bull; "Where The Wild Meets The Table"</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
